@@ -8,44 +8,32 @@ exports.config = {
 	},
 	paths: {
 		"public": 'public',
-		"watched": ['app', 'vendor', 'bower_components']
+		"watched": ['app', 'vendor']
 	},
 	files: {
 		javascripts: {
 			joinTo: {
 				'js/app.js': /^app/,
-				'js/vendor.js': function(path) {
-					path = path.replace(/\\/g, '/');
-					switch(path) {
-						case 'bower_components/modernizr/modernizr.js':
+				'js/vendor.js': [
+					/^vendor/,
 
-						// jquery
-						case 'bower_components/jquery/dist/jquery.js':
+					// external libs
+					'bower_components/modernizr/modernizr.js',
+					'bower_components/jquery/dist/jquery.js',
+					'bower_components/lodash/dist/lodash.js',
+					'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
 
-						// lodash
-						case 'bower_components/lodash/dist/lodash.js':
-
-						// angular
-						case 'bower_components/angular/angular.js':
-						case 'bower_components/angular-resource/angular-resource.js':
-						case 'bower_components/angular-sanitize/angular-sanitize.js':
-						case 'bower_components/angular-ui-router/release/angular-ui-router.js':
-						case 'bower_components/ocModal/ocModal.js':
-
-						// bootstrap
-						case 'bower_components/sass-boostrap3/dist/js/bootstrap.js':
-							return true;
-						default:
-							return false;
-					}
-				},
+					// angular
+					'bower_components/angular/angular.js',
+					'bower_components/angular-resource/angular-resource.js',
+					'bower_components/angular-sanitize/angular-sanitize.js',
+					'bower_components/angular-ui-router/release/angular-ui-router.js',
+					'bower_components/ocModal/dist/ocModal.min.js'
+				],
 				'test/scenarios.js': /^test(\/|\\)e2e/
 			},
 			order: {
 				before: [
-					'bower_components/respond/respond.src.js',
-					'bower_components/console-polyfill/index.js',
-
 					// jquery
 					'bower_components/jquery/jquery.js',
 
@@ -65,7 +53,9 @@ exports.config = {
 	},
 
 	server: {
-		path: 'jst-server.js'
+		path: 'server.js',
+		port: 3333,
+		base: 'public'
 	},
 
 	conventions: {

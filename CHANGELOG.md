@@ -1,3 +1,8 @@
+# 0.6.0 (02 November 2014)
+* Update to Angular 1.3
+* All libs have been updated, config & server have been updated accordingly.
+* Using browser-sync-brunch instead of auto-reload-brunch
+
 # 0.5.0 (30 April 2014)
 * **breaking change** IE8 is no longer supported by angular, this seed has been updated accordingly. Support is now IE9+
 * New versions of angular, jquery & other libs
