@@ -10,7 +10,7 @@
 * Npm scripts are now used instead of .bat & .sh scripts, check the README.md or package.json files for the list of commands
 * Lodash has been added to the vendor files
 
-# 0.4.1 (16 Mars 2014)
+# 0.4.1 (16 March 2014)
 * New version of angular, last one supporting IE8, new releases will only support IE9+
 * Node-sass has been updated and we can use the official twitter bootstrap sass port from now on
 

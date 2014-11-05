@@ -50,7 +50,7 @@ Please be aware of the caveats regarding Angular JS and minification, take a loo
 Notes:
 
 - Karma will run tests on save. To insure that changes are saved be sure to have `npm start` or `npm run-script dev` running in the console
-- You can set the browsers that you would like to target in the `/test/karma_conf.js` file E.g. `browser = ["ChromeCanary", "Firefox"]`
+- You can set the browsers that you would like to target in the `/test/karma.conf.js` file E.g. `browser = ["ChromeCanary", "Firefox"]`
 
 ### End to end testing
 
@@ -65,7 +65,7 @@ Notes:
 
 The complete [Brunch FAQ](https://github.com/brunch/brunch/blob/master/docs/faq.md)
 
-## Contributers
+## Contributors
 
 Olivier Combe
 
