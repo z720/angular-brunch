@@ -23,9 +23,9 @@ Features:
 * `cd angular-brunch-seed-no-fuss`
 * `npm install` to install node & bower packages
 
-or if you have **Brunch** installed run:
+or if you have **Brunch** installed, create a directory for your app, `cd` into it and run:
 
-`brunch new myapp --skeleton https://github.com/ocombe/angular-brunch-seed-no-fuss`
+`brunch new gh:ocombe/angular-brunch-seed-no-fuss`
 
 ### Running the app during development
 
