@@ -22,7 +22,7 @@ describe("my app", function() {
 		});
 
 		it("should display checked items with a line-through", function() {
-			return expect($("[ui-view] ul li input:checked + span").getCssValue("text-decoration")).toEqual("line-through solid rgb(51, 51, 51)");
+			return expect($("[ui-view] ul li input:checked + span").getCssValue("text-decoration")).toEqual("line-through");
 		});
 
 		it("should sync done status with checkbox state", function() {
