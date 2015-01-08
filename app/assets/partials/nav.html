@@ -13,8 +13,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-            <li ng-class="getClass('/todo')"><a href="#/todo" ui-sref="todo()">todo</a></li>
-            <li ng-class="getClass('/view')"><a href="#/view" ui-sref="view()">view</a></li>
+            <li ui-sref-active="active"><a ui-sref="todo()">todo</a></li>
+            <li ui-sref-active="active"><a ui-sref="view()">view</a></li>
             <li><button class="btn btn-default navbar-btn" oc-modal-open="{url: 'partials/modal.html', controller: 'ModalCtrl'}">modal</button></li>
         </ul>
     </div>
