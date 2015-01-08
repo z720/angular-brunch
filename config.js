@@ -64,6 +64,14 @@ exports.config = {
 				experimental: true
 			}
 		},
+		autoprefixer: {
+			browsers: [
+				"last 2 version",
+				"> 1%", // browsers with > 1% usage
+				"ie >= 9"
+			],
+			cascade: false
+		}
 	},
 
 	server: {
