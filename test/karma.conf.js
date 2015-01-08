@@ -67,7 +67,7 @@ module.exports = function(karma) {
 			'/': 'http://localhost:3333/'
 		},
 
-		urlRoot: '',
+		urlRoot: '__karma__',
 
 		plugins: [
 			'karma-jasmine',
