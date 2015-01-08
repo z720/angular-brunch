@@ -21,6 +21,6 @@ angular.module('app', ['ngSanitize', 'ngResource', 'ui.router', 'oc.modal']).con
 		}
 	});
 
-	// Without server side support html5 must be disabled.
-	return $locationProvider.html5Mode(false);
+	// /!\ Without server side support html5 must be disabled.
+	return $locationProvider.html5Mode(true);
 });

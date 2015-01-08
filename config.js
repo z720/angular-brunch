@@ -75,9 +75,7 @@ exports.config = {
 	},
 
 	server: {
-		path: 'server.js',
-		port: 3333,
-		base: 'public'
+		port: 3333
 	},
 
 	conventions: {
