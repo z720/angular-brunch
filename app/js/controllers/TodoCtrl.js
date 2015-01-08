@@ -1,4 +1,4 @@
-App.controller('TodoCtrl', ['$scope', function($scope) {
+angular.module('app').controller('TodoCtrl', function($scope) {
 	$scope.todos = [{
 		text: "learn angular",
 		done: true
@@ -31,4 +31,4 @@ App.controller('TodoCtrl', ['$scope', function($scope) {
 			}
 		});
 	};
-}]);
+});

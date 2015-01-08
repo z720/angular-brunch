@@ -6,10 +6,12 @@ exports.config = {
 		definition: false,
 		wrapper: false
 	},
+
 	paths: {
 		"public": 'public',
 		"watched": ['app', 'vendor']
 	},
+
 	files: {
 		javascripts: {
 			joinTo: {
@@ -50,6 +52,12 @@ exports.config = {
 				'css/app.css': /^app/
 			}
 		}
+	},
+
+	plugins: {
+		ng_annotate: {
+			pattern: /^app/
+		},
 	},
 
 	server: {

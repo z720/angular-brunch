@@ -1,3 +1,3 @@
-App.controller('ModalCtrl', ['$scope', function($scope) {
+angular.module('app').controller('ModalCtrl', function($scope) {
 	console.log('modal ctrl');
-}]);
+});
