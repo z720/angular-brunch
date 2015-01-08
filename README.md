@@ -5,11 +5,11 @@
 
 Features:
 * Full JS & HTML (no Coffeescript, no Jade) & SCSS automatically compiled on save (No ruby, we use node-sass & node-bourbon !)
-* Modernizr (because IE9 is still alive) (if you need a version compatible IE8, get the release 0.4.1)
-* auto-reload during development saves you from manually refreshing the page and the css is automatically injected without refreshing the page
 * Javascript / CSS minification for production
+* [BrowserSync](http://www.browsersync.io/): during development it will auto-reload to save you from manually refreshing the page, the css is automatically injected and all your browsers are synchronized
 * [karma](http://karma-runner.github.io) integration for unit & e2e tests
 * Bootstrap 3
+* Compatible with IE9+ (if you need a version compatible with IE8, get the release 0.4.1)
 * Be consistent, with the [.editorconfig file](http://editorconfig.org/) your coding style will be the same across IDEs & editors (adapt it to your coding preferences)
 
 ## Alternate Versions
@@ -35,11 +35,11 @@ or if you have **Brunch** installed, create a directory for your app, `cd` into 
 Then navigate your browser to [http://localhost:3333](http://localhost:3333)
 If you use your own server, you can use the development script :
 
-* `npm run-script dev`
+* `npm run dev`
 
 ### Running the app in production
 
-* `npm run-script prod` to minify javascript and css files for production deployment
+* `npm run prod` to minify javascript and css files for production deployment
 
 Please be aware of the caveats regarding Angular JS and minification, take a look at [Dependency Injection](http://docs.angularjs.org/guide/di) for information.
 
@@ -50,13 +50,13 @@ Please be aware of the caveats regarding Angular JS and minification, take a loo
 
 Notes:
 
-- Karma will run tests on save. To insure that changes are saved be sure to have `npm start` or `npm run-script dev` running in the console
+- Karma will run tests on save. To insure that changes are saved be sure to have `npm start` or `npm run dev` running in the console
 - You can set the browsers that you would like to target in the `/test/karma.conf.js` file E.g. `browser = ["ChromeCanary", "Firefox"]`
 
 ### End to end testing
 
 * Run the app in development mode as described above using a separate terminal
-* `npm run-script test-e2e` to run e2e tests with [karma](http://karma-runner.github.io) using protractor
+* `npm run test-e2e` to run e2e tests with [karma](http://karma-runner.github.io) using protractor
 * Be aware that changing the SCSS files will compile the new CSS while the server is running, but that it won't trigger a e2e test reload, you'll have to manually relaunch the test server fow now
 
 ### Common issues
