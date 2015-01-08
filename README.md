@@ -10,6 +10,7 @@ Features:
 * Javascript / CSS minification for production
 * [karma](http://karma-runner.github.io) integration for unit & e2e tests
 * Bootstrap 3
+* Be consistent, with the [.editorconfig file](http://editorconfig.org/) your coding style will be the same across IDEs & editors (adapt it to your coding preferences)
 
 ## Alternate Versions
 
