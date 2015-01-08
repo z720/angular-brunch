@@ -2,7 +2,7 @@
   "author": "Olivier Combe <olivier.combe@gmail.com>",
   "name": "angular-brunch-seed-no-fuss",
   "description": "AngularJS + Brunch + SCSS",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "homepage": "https://github.com/ocombe/angular-brunch-seed-no-fuss",
   "repository": {
     "type": "git",

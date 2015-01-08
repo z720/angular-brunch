@@ -1,3 +1,12 @@
+#0.7.0 (08 January 2015)
+* All libs have been updated
+* Using ng-annotate to simplify the angular code
+* Using an .editorconfig file to keep your coding style consistent, don't forget to add an Editor Config plugin to your IDE (all majors IDEs are supported)
+* ES6 is now supported! We use Traceur because of its AtScript support (6to5 won't support AtScript for now)
+* Using Autoprefixer to simplify the CSS code, you don't have to worry about vendor prefixes anymore!
+* We now use the default brunch server
+* **breaking change** I activated the HTML5 mode for Angular URLs, because it's 2015 and your server should support this (don't worry it will switch to not-HTML5 mode for IE9 automatically). If you still use a prehistoric server you can disable it in app.js.
+
 # 0.6.0 (02 November 2014)
 * Update to Angular 1.3
 * All libs have been updated, config & server have been updated accordingly.
