@@ -5,9 +5,15 @@ exports.config = {
 		'e2e/**/*.js'
 	],
 
-	multiCapabilities: [/*{
-		'browserName': 'firefox'
-	}, */{
+	// Start these browsers, currently available:
+	// - chrome
+	// - ChromeCanary
+	// - Firefox
+	// - Safari
+	// - PhantomJS
+	// - IE (only Windows)
+	// - iOS (only Mac)
+	multiCapabilities: [{
 		'browserName': 'chrome'
 	}],
 

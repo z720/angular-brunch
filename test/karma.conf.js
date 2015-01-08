@@ -22,9 +22,7 @@ module.exports = function(karma) {
 		],
 
 		// list of files to exclude
-		exclude: [
-
-		],
+		exclude: [],
 
 		// test results reporter to use
 		// possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
@@ -50,11 +48,11 @@ module.exports = function(karma) {
 		// - Chrome
 		// - ChromeCanary
 		// - Firefox
-		// - Safari (only Mac)
+		// - Safari
 		// - PhantomJS
 		// - IE (only Windows)
 		// - iOS (only Mac)
-		browsers: [],
+		browsers: ['Chrome'],
 
 		// If browser does not capture in given timeout [ms], kill it
 		captureTimeout: 60000,
