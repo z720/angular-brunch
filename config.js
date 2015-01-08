@@ -58,6 +58,12 @@ exports.config = {
 		ng_annotate: {
 			pattern: /^app/
 		},
+		traceur: {
+			paths: /^app/,
+			options: {
+				experimental: true
+			}
+		},
 	},
 
 	server: {

@@ -7,6 +7,7 @@ Features:
 * Full JS & HTML (no Coffeescript, no Jade) & SCSS automatically compiled on save (No ruby, we use node-sass & node-bourbon !)
 * [BrowserSync](http://www.browsersync.io/): during development it will auto-reload to save you from manually refreshing the page, the css is automatically injected and all your browsers are synchronized
 * Javascript / CSS minification for production, and with [ng-annotate](https://github.com/olov/ng-annotate) you don't even have to worry about Angular injections
+* ES6 ready with [Traceur compiler](https://github.com/google/traceur-compiler): your ES6 code will execute in ES5 browsers
 * [karma](http://karma-runner.github.io) integration for unit & e2e tests
 * Bootstrap 3
 * Compatible with IE9+ (if you need a version compatible with IE8, get the release 0.4.1)
