@@ -4,7 +4,7 @@
 
 describe("my app", function() {
 	beforeEach(function() {
-		return browser.get("/#!");
+		return browser.get("/");
 	});
 
 	it("should automatically redirect to /todo when location hash/fragment is empty", function() {
@@ -18,7 +18,7 @@ describe("my app", function() {
 
 	describe("todo", function() {
 		it("should list 2 items", function() {
-			return expect(element.all(by.repeater("todo in todos")).count()).toEqual(2);
+			return expect(element.all(by.repeater("task in todo.tasks")).count()).toEqual(2);
 		});
 
 		it("should display checked items with a line-through", function() {
@@ -33,16 +33,16 @@ describe("my app", function() {
 		});
 
 		it("should remove checked items when the archive link is clicked", function() {
-			$("[ui-view] a[ng-click=\"archive()\"]").click();
-			return expect(element.all(by.repeater("todo in todos")).count()).toEqual(1);
+			$("[ui-view] a[ng-click=\"todo.archive()\"]").click();
+			return expect(element.all(by.repeater("task in todo.tasks")).count()).toEqual(1);
 		});
 
 		return it("should add a newly submitted item to the end of the list and empty the text input", function() {
 			var newItemLabel = "test newly added item";
-			var input = element(by.model("todoText"));
+			var input = element(by.model("todo.taskText"));
 			input.sendKeys(newItemLabel);
 			$('[ui-view] button[type="submit"]').click();
-			expect(element.all(by.repeater("todo in todos")).count()).toEqual(3);
+			expect(element.all(by.repeater("task in todo.tasks")).count()).toEqual(3);
 			expect($("[ui-view] ul li:last-child span").getText()).toEqual(newItemLabel);
 			return expect(input.getAttribute('value')).toEqual("");
 		});
@@ -50,10 +50,10 @@ describe("my app", function() {
 
 	describe("view", function() {
 		beforeEach(function() {
-			return browser.get("/#!/view");
+			return browser.get("/view");
 		});
 		return it("should render view when user navigates to /view", function() {
-			return expect($("[ui-view] p:first-child").getText()).toMatch(/partial for view 1/);
+			return expect($("[ui-view] p:first-child").getText()).toMatch(/partial for view/);
 		});
 	});
 });
