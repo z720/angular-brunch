@@ -45,7 +45,7 @@
     "karma-safari-launcher": "0.1.1",
     "karma-script-launcher": "~0.1.0",
     "node-bourbon": "~1.2.3",
-    "protractor": "~1.5.0",
+    "protractor": "~1.6.0",
     "selenium-webdriver": "~2.44.0"
   }
 }
