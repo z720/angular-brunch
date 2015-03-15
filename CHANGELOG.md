@@ -1,3 +1,8 @@
+#0.8.0 (15 March 2015)
+* Removed ui-Router, added ngRoute
+* Removed filter 'interpolate'
+* JSLint compliance
+
 #0.7.0 (08 January 2015)
 * All libs have been updated
 * Using ng-annotate to simplify the angular code

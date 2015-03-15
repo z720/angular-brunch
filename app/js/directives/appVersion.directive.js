@@ -1,11 +1,14 @@
-angular.module('app').directive('appVersion', function appVersion() {
-	return {
-		restrict: 'E',
-		template: '<span>{{ "%VERSION%" | interpolate  }}</span>',
-		link: link
-	};
-
-	function link($scope, $element, $attrs) {
-		// you can do things here if you want!
-	}
-});
+/*jslint browser: true*/
+/*global angular */
+angular.module('app').directive('appVersion', [ 'VERSION', function (VERSION) {
+  'use strict';
+  function link($scope) {
+    // you can do things here if you want!
+    $scope.version = VERSION;
+  }
+  return {
+    restrict: 'A',
+    template: 'v{{version}}',
+    link: link
+  };
+}]);

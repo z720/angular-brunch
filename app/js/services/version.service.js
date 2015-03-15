@@ -1,3 +1,6 @@
+/*jslint browser: true*/
+/*global angular */
 angular.module('app').factory('$version', function version(VERSION) {
-	return VERSION;
+  'use strict';
+  return VERSION;
 });
