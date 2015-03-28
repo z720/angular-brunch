@@ -74,6 +74,10 @@ exports.config = {
 		}
 	},
 
+  keyword: {
+    filePatterm: /(\.html|\.js|\.css)/
+  },
+
 	server: {
 		port: 3333
 	},

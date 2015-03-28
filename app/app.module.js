@@ -2,7 +2,7 @@
 /*global angular */
 // Declare app level module which depends on filters, and services
 angular.module('app', ['ngSanitize', 'ngResource', 'ngRoute', 'oc.modal'])
-  .constant('VERSION', '0.8.0')
+  .constant('VERSION', '{!version!}')
   .config([ '$routeProvider', function ($routeProvider) {
     'use strict';
     $routeProvider.when('/todo', {

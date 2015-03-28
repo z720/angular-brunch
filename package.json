@@ -2,7 +2,7 @@
   "author": "Olivier Combe <olivier.combe@gmail.com>",
   "name": "angular-brunch-seed-no-fuss",
   "description": "AngularJS + Brunch + SCSS",
-  "version": "0.8.0",
+  "version": "0.8.0-dev",
   "homepage": "https://github.com/ocombe/angular-brunch-seed-no-fuss",
   "repository": {
     "type": "git",
@@ -46,6 +46,7 @@
     "karma-script-launcher": "~0.1.0",
     "node-bourbon": "~1.2.3",
     "protractor": "~1.6.0",
-    "selenium-webdriver": "~2.44.0"
+    "selenium-webdriver": "~2.44.0",
+    "keyword-brunch": "~1.7.8"
   }
 }
