@@ -27,7 +27,7 @@ module.exports = function (karma) {
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-    reporters: ['progress', 'junit'],
+    reporters: ['progress', 'junit', 'coverage'],
 
     // web server port
     port: 3334,
@@ -76,7 +76,8 @@ module.exports = function (karma) {
       'karma-firefox-launcher',
       'karma-safari-launcher',
       'karma-phantomjs-launcher',
-      'karma-junit-reporter'
+      'karma-junit-reporter',
+      'karma-coverage'
     ]
   });
 };

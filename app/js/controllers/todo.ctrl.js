@@ -32,10 +32,10 @@ angular.module('app').controller('TodoCtrl', function TodoCtrl() {
     };
 
   todo.tasks = [{
-    text: "learn angular",
+    text: 'learn angular',
     done: true
   }, {
-    text: "build an angular app",
+    text: 'build an angular app',
     done: false
   }];
 

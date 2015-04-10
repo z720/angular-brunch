@@ -1,6 +1,6 @@
 {
-  "name": "angular-brunch-seed-no-fuss",
-  "version": "0.7.0",
+  "name": "angular-brunch",
+  "version": "0.9.0-dev",
   "dependencies": {
     "angular": "~1.3.14",
     "angular-resource": "~1.3.14",
